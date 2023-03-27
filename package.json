@@ -1,0 +1,20 @@
+{
+  "name": "230324-serverprac",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dltpals222/230324-serverprac.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/dltpals222/230324-serverprac/issues"
+  },
+  "homepage": "https://github.com/dltpals222/230324-serverprac#readme"
+}
