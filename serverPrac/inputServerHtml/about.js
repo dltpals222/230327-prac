@@ -12,8 +12,15 @@ for(let i=0 ; i<rootChild.length;i++){
   })
 }
 
-tagMakeCall(document.body,'input',function(element){
+tagMakeCall(root,'form',function(element){
+  element.setAttribute('action','/')
+  element.setAttribute('id','about-form')
+})
+
+const aboutForm = document.getElementById('about-form')
+
+tagMakeCall(aboutForm,'input',function(element){
   element.setAttribute('value','되돌아가기')
-  element.setAttribute('type','button')
+  element.setAttribute('type','submit')
   element.setAttribute('id','about-btn')
 })

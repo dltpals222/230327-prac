@@ -24,7 +24,7 @@ const server = http.createServer(function(request, response){
   console.log(path.basename(request.url))
   console.log(path.basename(request.method))
   switch (url) {
-    case '/':
+    case '/?':
       serveStaticFile(response, path.join(resolve(),'server/index.html'),'text/html',200);
       console.log(url)
     break;

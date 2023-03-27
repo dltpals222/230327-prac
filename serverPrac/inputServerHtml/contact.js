@@ -14,3 +14,17 @@ for(let i=0 ; i<rootChild.length;i++){
     element.style.height = '100px'
   })
 }
+
+
+tagMakeCall(root,'form',function(element){
+  element.setAttribute('action','/')
+  element.setAttribute('id','contact-form')
+})
+
+const contactForm = document.getElementById('contact-form')
+
+tagMakeCall(contactForm,'input',function(element){
+  element.setAttribute('value','되돌아가기')
+  element.setAttribute('type','submit')
+  element.setAttribute('id','contact-btn')
+})
