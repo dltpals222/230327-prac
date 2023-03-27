@@ -20,7 +20,6 @@ function serveStaticFile(response, path, contentTpye, responseCode){
 
 const server = http.createServer(function(request, response){
   const url = request.url.toLowerCase();
-  const reqSplit = request.url.split('?')[0]
   // const reqUrl = path.basename(request.url)
   console.log(path.basename(request.url))
   console.log(path.basename(request.method))
@@ -29,11 +28,11 @@ const server = http.createServer(function(request, response){
       serveStaticFile(response, path.join(resolve(),'server/index.html'),'text/html',200);
       console.log(url)
     break;
-    case startsWith('/about'):
+    case '/about?':
       serveStaticFile(response, path.join(resolve(),'server/about.html'),'text/html',200);
       console.log(url)
       break;
-    case '/contact':
+    case '/contact?':
       serveStaticFile(response, path.join(resolve(),'server/contact.html'),'text/html',200);
       console.log(url)
       break;
