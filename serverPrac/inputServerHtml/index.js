@@ -30,21 +30,24 @@ const rootChildForm = [
 
 const inputButton = [
   [root.children[1],root.children[2],root.children[3]],
-  'button',
+  'input',
   [function(element){
       element.setAttribute('id','about-btn')
       element.setAttribute('type','submit')
-      element.innerText = 'about버튼'
+      element.setAttribute('value','about버튼')
+      // element.innerText = 'about버튼'
     },
     function(element){
       element.setAttribute('id','contact-btn')
       element.setAttribute('type','submit')
-      element.innerText = 'contact버튼'
+      element.setAttribute('value','contact버튼')
+      // element.innerText = 'contact버튼'
     },
     function(element){
       element.setAttribute('id','404-btn')
       element.setAttribute('type','submit')
-      element.innerText = '404버튼'
+      element.setAttribute('value','404버튼')
+      // element.innerText = '404버튼'
     }
   ]
 ]
